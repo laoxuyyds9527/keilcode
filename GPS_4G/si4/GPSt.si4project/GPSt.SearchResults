@@ -1,0 +1,31 @@
+---- TIM_TimeBaseInitStruct Matches (30 in 0 files) ----
+n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) line 178 :  *         the specified parameters in the TIM_TimeBaseInitStruct.
+n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) line 180 :  * @param TIM_TimeBaseInitStruct pointer to a TIM_TimeBaseInitType
+n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) line 184 : void TIM_InitTimeBase(TIM_Module* TIMx, TIM_TimeBaseInitType* TIM_TimeBaseInitStruct)
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     assert_param(IsTimCntMode(TIM_TimeBaseInitStruct->CntMode));
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     assert_param(IsTimClkDiv(TIM_TimeBaseInitStruct->ClkDiv));
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         tmpcr1 |= (uint32_t)TIM_TimeBaseInitStruct->CntMode;
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         tmpcr1 |= (uint32_t)TIM_TimeBaseInitStruct->ClkDiv;
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIMx->AR = TIM_TimeBaseInitStruct->Period;
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIMx->PSC = TIM_TimeBaseInitStruct->Prescaler;
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         TIMx->REPCNT = TIM_TimeBaseInitStruct->RepetCnt;
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         if (TIM_TimeBaseInitStruct->CapCh1FromCompEn)
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         if (TIM_TimeBaseInitStruct->CapCh2FromCompEn)
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         if (TIM_TimeBaseInitStruct->CapCh3FromCompEn)
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         if (TIM_TimeBaseInitStruct->CapCh4FromCompEn)
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         if (TIM_TimeBaseInitStruct->CapEtrClrFromCompEn)
+TIM_InitTimeBase in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :         if (TIM_TimeBaseInitStruct->CapEtrSelFromTscEn)
+n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) line 863 :  * @brief  Fills each TIM_TimeBaseInitStruct member with its default value.
+n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) line 864 :  * @param TIM_TimeBaseInitStruct pointer to a TIM_TimeBaseInitType
+n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) line 867 : void TIM_InitTimBaseStruct(TIM_TimeBaseInitType* TIM_TimeBaseInitStruct)
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->Period    = 0xFFFF;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->Prescaler = 0x0000;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->ClkDiv    = TIM_CLK_DIV1;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->CntMode   = TIM_CNT_MODE_UP;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->RepetCnt  = 0x0000;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->CapCh1FromCompEn    = false;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->CapCh2FromCompEn    = false;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->CapCh3FromCompEn    = false;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->CapCh4FromCompEn    = false;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->CapEtrClrFromCompEn = false;
+TIM_InitTimBaseStruct in n32wb452_tim.c (libraries\n32wb452_std_periph_driver\src) :     TIM_TimeBaseInitStruct->CapEtrSelFromTscEn  = false;

@@ -1,0 +1,24 @@
+---- GPIO_InitStruct Matches (23 in 0 files) ----
+stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) line 167 :   *         parameters in the GPIO_InitStruct.
+stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) line 169 :   * @param  GPIO_InitStruct: pointer to a GPIO_InitTypeDef structure that
+stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) line 173 : void GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct)
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   assert_param(IS_GPIO_MODE(GPIO_InitStruct->GPIO_Mode));
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   assert_param(IS_GPIO_PIN(GPIO_InitStruct->GPIO_Pin));  
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   currentmode = ((uint32_t)GPIO_InitStruct->GPIO_Mode) & ((uint32_t)0x0F);
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   if ((((uint32_t)GPIO_InitStruct->GPIO_Mode) & ((uint32_t)0x10)) != 0x00)
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :     assert_param(IS_GPIO_SPEED(GPIO_InitStruct->GPIO_Speed));
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :     currentmode |= (uint32_t)GPIO_InitStruct->GPIO_Speed;
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   if (((uint32_t)GPIO_InitStruct->GPIO_Pin & ((uint32_t)0x00FF)) != 0x00)
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :       currentpin = (GPIO_InitStruct->GPIO_Pin) & pos;
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :         if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPD)
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :           if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPU)
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   if (GPIO_InitStruct->GPIO_Pin > 0x00FF)
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :       currentpin = ((GPIO_InitStruct->GPIO_Pin) & pos);
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :         if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPD)
+GPIO_Init in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :         if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPU)
+stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) line 261 :   * @brief  Fills each GPIO_InitStruct member with its default value.
+stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) line 262 :   * @param  GPIO_InitStruct : pointer to a GPIO_InitTypeDef structure which will
+stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) line 266 : void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct)
+GPIO_StructInit in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   GPIO_InitStruct->GPIO_Pin  = GPIO_Pin_All;
+GPIO_StructInit in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   GPIO_InitStruct->GPIO_Speed = GPIO_Speed_2MHz;
+GPIO_StructInit in stm32f10x_gpio.c (libraries\STM32F10x_StdPeriph_Driver\src) :   GPIO_InitStruct->GPIO_Mode = GPIO_Mode_IN_FLOATING;

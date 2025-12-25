@@ -1,0 +1,3 @@
+---- GPIO_Init Matches (4 in 0 files) ----
+feng_ming in feng.c (drivers\src) : 	GPIO_InitTypeDef  GPIO_InitStruct;
+feng_ming in feng.c (drivers\src) : 	GPIO_Init (GPIO_TypeDef * GPIOx, &GPIO_InitStruct);	

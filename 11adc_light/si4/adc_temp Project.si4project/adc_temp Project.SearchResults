@@ -1,0 +1,4 @@
+---- ADC_data_align Matches (3 in 0 files) ----
+{anonADC_InitTypeDef} in stm32f10x_adc.h (libraries\STM32F10x_StdPeriph_Driver\inc) :                                                This parameter can be a value of @ref ADC_data_align */
+stm32f10x_adc.h (libraries\STM32F10x_StdPeriph_Driver\inc) line 158 : /** @defgroup ADC_data_align 
+stm32f10x_adc.h (libraries\STM32F10x_StdPeriph_Driver\inc) line 164 : #define IS_ADC_DATA_ALIGN(ALIGN) (((ALIGN) == ADC_DataAlign_Right) || \

@@ -1,0 +1,3 @@
+---- TIM_Output_Compare_N_Idle_State Matches (2 in 0 files) ----
+{anonTIM_OCInitTypeDef} in stm32f10x_tim.h (libraries\STM32F10x_StdPeriph_Driver\inc) :                                    This parameter can be a value of @ref TIM_Output_Compare_N_Idle_State
+stm32f10x_tim.h (libraries\STM32F10x_StdPeriph_Driver\inc) line 537 : /** @defgroup TIM_Output_Compare_N_Idle_State 

@@ -1,0 +1,133 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: HAO XIAO, 123456, LIC=MPPLD-8LVL3-74YS0-BW8MI-EEBB5-14HTS
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.12.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\keilcode\6keyinterrupt\project\test.uvprojx
+Project File Date:  11/23/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling main.c...
+..\user\main.c(21): error:  #513: a value of type "char *" cannot be assigned to an entity of type "u8"
+  		if(ky="KET_NO")
+..\user\main.c(21): warning:  #1293-D: assignment in condition
+  		if(ky="KET_NO")
+..\user\main.c(23): error:  #8: missing closing quote
+  			printf("æ²¡æœ‰æŒ?");
+..\user\main.c(24): error:  #18: expected a ")"
+  		}
+..\user\main.c(24): error:  #65: expected a ";"
+  		}
+..\user\main.c(25): error:  #513: a value of type "char *" cannot be assigned to an entity of type "u8"
+  		if(ky="KET_1")
+..\user\main.c(25): warning:  #1293-D: assignment in condition
+  		if(ky="KET_1")
+..\user\main.c(27): warning:  #870-D: invalid multibyte character sequence
+  			printf("æŒ?1");
+..\user\main.c(29): error:  #513: a value of type "char *" cannot be assigned to an entity of type "u8"
+  		if(ky="KET_2")
+..\user\main.c(29): warning:  #1293-D: assignment in condition
+  		if(ky="KET_2")
+..\user\main.c(31): warning:  #870-D: invalid multibyte character sequence
+  			printf("æŒ?2");
+..\user\main.c(33): error:  #513: a value of type "char *" cannot be assigned to an entity of type "u8"
+  		if(ky="KET_3")
+..\user\main.c(33): warning:  #1293-D: assignment in condition
+  		if(ky="KET_3")
+..\user\main.c(35): warning:  #870-D: invalid multibyte character sequence
+  			printf("æŒ?3");
+..\user\main.c(38): warning:  #111-D: statement is unreachable
+  	return 0;
+..\user\main.c(16): warning:  #550-D: variable "ky"  was set but never used
+  	u8 ky;
+..\user\main.c: 9 warnings, 7 errors
+compiling core_cm3.c...
+compiling stm32f10x_it.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_cec.c...
+compiling misc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_tim.c...
+compiling led.c...
+compiling usart.c...
+compiling systick_drv.c...
+compiling key.c...
+..\drivers\inc\key.h(8): warning:  #1295-D: Deprecated declaration keyscan - give arg types
+  u8 keyscan();
+..\drivers\inc\key.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\drivers\src\key.c(29): error:  #20: identifier "KEY_NO" is undefined
+  	u8 keyval=KEY_NO;
+..\drivers\src\key.c(31): warning:  #187-D: use of "=" where "==" may have been intended
+  	if(mode=1)
+..\drivers\src\key.c(35): warning:  #223-D: function "PAin" declared implicitly
+  	if ((PAin(0)||!PAin(1)||!PAin(4)&&flag)
+..\drivers\src\key.c(36): error:  #18: expected a ")"
+  	{
+..\drivers\src\key.c(60): warning:  #12-D: parsing restarts here after previous syntax error
+  }
+..\drivers\src\key.c(60): error:  #127: expected a statement
+  }
+..\drivers\src\key.c(60): warning:  #940-D: missing return statement at end of non-void function "keyscan" 
+  }
+..\drivers\src\key.c(27): warning:  #550-D: parameter "mode"  was set but never used
+  u8 keyscan(u8 mode)
+..\drivers\src\key.c: 7 warnings, 3 errors
+".\Objects\test.axf" - 10 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.0.0.pack
+                Keil.STM32F1xx_DFP.2.0.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
